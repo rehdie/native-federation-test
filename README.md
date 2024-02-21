@@ -7,7 +7,7 @@ an angular workspace with 3 projects:
 - shell - the shell, to test native federation running on port 4200
 
 
-# Branch master
+# Branch main
 
 In this branch the native federation has not been applied. To start the mfe application, you have to
 
@@ -22,7 +22,7 @@ In this branch native federation has been added by executing the following comma
 
 `ng add @angular-architects/native-federation --project mfe --port 4201 --type remote`
 
-Now try the same as in branch `master`:
+Now try the same as in branch `main`:
 
 1. run `ng build test-lib`
 2. run `npm run start:mfe` (or `ng serve mfe`)
