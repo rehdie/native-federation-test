@@ -36,34 +36,34 @@
         }
       }
     },
-    "test-app": {
+    "mfe": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
         }
       },
-      "root": "projects/test-app",
-      "sourceRoot": "projects/test-app/src",
+      "root": "projects/mfe",
+      "sourceRoot": "projects/mfe/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/test-app",
-            "index": "projects/test-app/src/index.html",
-            "browser": "projects/test-app/src/main.ts",
+            "outputPath": "dist/mfe",
+            "index": "projects/mfe/src/index.html",
+            "browser": "projects/mfe/src/main.ts",
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "projects/test-app/tsconfig.app.json",
+            "tsConfig": "projects/mfe/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/test-app/src/favicon.ico",
-              "projects/test-app/src/assets"
+              "projects/mfe/src/favicon.ico",
+              "projects/mfe/src/assets"
             ],
             "styles": [
-              "projects/test-app/src/styles.scss"
+              "projects/mfe/src/styles.scss"
             ],
             "scripts": []
           },
@@ -95,10 +95,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "test-app:build:production"
+              "buildTarget": "mfe:build:production"
             },
             "development": {
-              "buildTarget": "test-app:build:development"
+              "buildTarget": "mfe:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -106,7 +106,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "test-app:build"
+            "buildTarget": "mfe:build"
           }
         },
         "test": {
@@ -116,14 +116,14 @@
               "zone.js",
               "zone.js/testing"
             ],
-            "tsConfig": "projects/test-app/tsconfig.spec.json",
+            "tsConfig": "projects/mfe/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/test-app/src/favicon.ico",
-              "projects/test-app/src/assets"
+              "projects/mfe/src/favicon.ico",
+              "projects/mfe/src/assets"
             ],
             "styles": [
-              "projects/test-app/src/styles.scss"
+              "projects/mfe/src/styles.scss"
             ],
             "scripts": []
           }
