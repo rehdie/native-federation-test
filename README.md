@@ -12,7 +12,7 @@ an angular workspace with 3 projects:
 In this branch the native federation has not been applied. To start the mfe application, you have to
 
 1. run `ng build test-lib`
-2. run `npm run start:mfe`
+2. run `npm run start:mfe` (or `ng serve mfe`)
 3. browse to http://localhost:4201  => this works fine
 
 
@@ -22,10 +22,10 @@ In this branch native federation has been added by executing the following comma
 
 `ng add @angular-architects/native-federation --project mfe --port 4201 --type remote`
 
-Now try the same as in branch master:
+Now try the same as in branch `master`:
 
 1. run `ng build test-lib`
-2. run `npm run start:mfe`
+2. run `npm run start:mfe` (or `ng serve mfe`)
 3. browse to http://localhost:4201  
 
 This doesn't work anymore. The following runtime error occurs (as seen in the browsers console):
