@@ -1,0 +1,27 @@
+:host {
+	display: flex;
+	align-items: stretch;
+	height: 100%;
+}
+
+nav {
+	padding: 1rem;
+	width: 200px;
+	flex-shrink: 0;
+	background-color: #ddd;
+	border-right: 1px solid #999;
+
+	li {
+		list-style-type: none;
+	}
+
+	li a {
+		white-space: nowrap;
+	}
+}
+
+main {
+	flex-grow: 1;
+	padding: 1.5rem 1rem;
+	background-color: #eee;
+}
